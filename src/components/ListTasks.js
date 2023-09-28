@@ -2,11 +2,12 @@ import React from "react";
 import {useState} from "react";
 import { useSelector} from "react-redux";
 import Task from "./Task";
-import { Button, Form } from "react-bootstrap";
-
-const [status, newStatus] = useState("all")
+import { Button} from "react-bootstrap";
 
 const ListTasks = () => {
+const [status, setStatus] = useState("all")
+
+
   const listTasks = useSelector((state)=>state.task.listTasks)
 
     return (

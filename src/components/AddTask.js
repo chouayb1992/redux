@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { addTask } from "./redux/Actions/action";
+import { addTask } from "../redux/Actions/action";
 
 const AddTask = () => {
 
@@ -22,10 +22,11 @@ const AddTask = () => {
         <Form.Label>Title</Form.Label>
         <Form.Control type="text" value= {newTitle} onChange={(e)=>setNewTitle(e.target.value)}/>
       </Form.Group>
-    </Form>
-    <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit">
       Add Task
     </Button>
+    </Form>
+   
     
         </div>
     )

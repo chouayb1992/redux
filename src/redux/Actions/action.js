@@ -7,7 +7,7 @@ export const addTask = ( newTask ) => {
     }
 }
 
-export const editTaskTask = ( id, newTitle ) => {
+export const editTask = ( id, newTitle ) => {
     return {
         type: EDIT_TASK,
         payload: {id, newTitle}

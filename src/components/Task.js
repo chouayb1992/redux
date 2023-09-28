@@ -2,9 +2,10 @@ import { Button } from "react-bootstrap";
 import React from "react";
 import Edit from "./Edit";
 import { useDispatch } from "react-redux";
+import { deleteTask, doneTask } from "../redux/Actions/action";
 
 const Task = ({task}) => {
-    dispatch = useDispatch();
+    const dispatch = useDispatch();
     const handleDelete = () => {
         dispatch(deleteTask(task.id))
     }

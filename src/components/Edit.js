@@ -1,7 +1,7 @@
 import { Button, Modal, Form } from "react-bootstrap";
 import React from "react";
 import { useState } from "react";
-import { editTask } from "../Actions/action";
+import { editTask } from "../redux/Actions/action"
 import { useDispatch } from "react-redux";
 
 const Edit = ({task}) => {
